@@ -18,3 +18,9 @@
 .item{
   flex: 1;
 }
+.raggleTitle{
+  text-align: center;
+}
+.card-deck{
+  justify-content: center;
+}

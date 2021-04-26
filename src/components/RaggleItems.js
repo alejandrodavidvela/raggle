@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Button} from 'react-bootstrap'
+import {Button, Card} from 'react-bootstrap'
 import uline_blanket from '../images/uline_blanket.jpg'
 
 
@@ -16,35 +16,27 @@ const data = {
 const RaggleItems = () => {
   return (
       <div>
-          <h2>Raggle Products</h2>
+          <h2 className="raggleTitle">Prizes</h2>
+          <div className="card-deck">
+          {data.ulineProducts.map((item, i) => {
+              return(
+                <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+              )
+            
+          })}
+          </div>
           
-                      <>
-                    <div class="card-deck">
-                        <div class="card bg-primary">
-                            <div class="card-body text-center">
-                            <p class="card-text">Some text inside the first card</p>
-                            </div>
-                        </div>
-                        <div class="card bg-warning">
-                            <div class="card-body text-center">
-                            <p class="card-text">Some text inside the second card</p>
-                            </div>
-                        </div>
-                        <div class="card bg-success">
-                            <div class="card-body text-center">
-                            <p class="card-text">Some text inside the third card</p>
-                            </div>
-                        </div>
-                        <div class="card bg-danger">
-                            <div class="card-body text-center">
-                            <p class="card-text">Some text inside the fourth card</p>
-                            </div>
-                        </div>
-                        </div>
-                    </>
-                      )
-
-              )}
+          
       </div>
   )
     

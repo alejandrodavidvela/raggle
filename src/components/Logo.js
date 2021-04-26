@@ -5,7 +5,7 @@ function Header() {
   // Import result is the URL of your image
   return (
     <div className='RaggleImage'>
-    <img src={logo} alt="Logo" />;
+    <img src={logo} alt="Logo" />
     </div>
     )
 }
