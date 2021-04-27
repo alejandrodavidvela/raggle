@@ -21,7 +21,7 @@ const RaggleItems = () => {
           <div className="card-deck">
           {data.ulineProducts.map((item, i) => {
               return(
-                <Card key={i} style={{ width: '18rem' }}>
+                <Card key={i} style={{ width: '5rem' }}>
                 <Card.Img variant="top" src={item.img} />
                 <Card.Body>
                     <Card.Title >{item.name}</Card.Title>
