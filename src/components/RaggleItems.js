@@ -28,7 +28,7 @@ const RaggleItems = () => {
                     <Card.Text >
                     {item.description}
                     </Card.Text >
-                    <Button variant="primary">Enter</Button>
+                    <Button onClick={() => console.log('yay')} variant="primary">Enter</Button>
                 </Card.Body>
                 </Card>
               )
